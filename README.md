@@ -1,80 +1,57 @@
-```markdown
 # Personal Portfolio — Static Website
 
-This repository contains a simple, responsive personal portfolio website (HTML + CSS) that showcases projects and contact links. The README below explains what each file does, what I implemented in the code, and how to run or deploy the site.
+A minimal, responsive personal portfolio built with plain HTML and CSS to showcase projects and contact information.
 
 What’s in this repo
-- index.html — Main landing page (home / projects / contact sections).
-- about.html — Dedicated about page with personal/biography content.
-- style.css — All styling for layouts, responsive rules, and visual components.
-- Images: profile and social icons used in the site (im.jpeg, facebook.png, instagram.png, twitter.png, notebook.png, etc.).
-- Other assets (e.g., email-marketing.jfif, coding(1).jfif) used across the site.
+- index.html — Main page with sections for introduction, projects, and contact.
+- about.html — Additional about / biography page.
+- style.css — Styling (layout, colors, responsive rules).
+- Images and assets — profile and social icons (im.jpeg, facebook.png, instagram.png, twitter.png, notebook.png, etc.).
 
-What I built / what the code does (step-by-step)
-1. Page structure (HTML)
-   - index.html and about.html are semantic HTML pages:
-     - Header with navigation linking to sections/pages.
-     - Main content sections for introduction, projects/portfolio, and contact.
-     - Footer with social links and small site info.
-   - The markup uses headings, paragraphs, lists and anchor tags for clear structure and SEO-friendly content.
+What I implemented
+- Semantic HTML structure (header, nav, main, footer) for accessibility and SEO.
+- Responsive layout using CSS Flexbox / Grid with media queries so content adapts to mobile and desktop.
+- Clean visual styling: consistent spacing, typography, and iconography.
+- Static contact link (mailto:) and social links for quick outreach.
+- All pages are static — no JavaScript required to use the site.
 
-2. Styling and responsive layout (CSS)
-   - style.css contains site styles: layout, colors, typography, and spacing.
-   - Responsive rules (media queries) adapt the layout for mobile and desktop:
-     - Navigation collapses or stacks for smaller screens.
-     - Grid or flexbox layouts rearrange project cards or content blocks.
-   - Visual assets (icons and images) are sized and framed consistently to maintain a cohesive look.
-
-3. Assets
-   - Local images are referenced from the repo; they are used for profile, project thumbnails, and social links.
-   - Images are included at appropriate sizes to balance visual quality and page load.
-
-4. Interactivity (minimal / static)
-   - The site is static HTML/CSS and does not require JavaScript to function.
-   - Links to external profiles (GitHub, LinkedIn, etc.) open in new tabs (if configured).
-   - Contact section provides an email link (mailto:) for quick contact.
+How the code is organized (what each file does)
+- index.html
+  - Header and navigation linking to page sections.
+  - Hero/introduction section, project tiles, and contact area.
+  - Uses relative image paths from the repository.
+- about.html
+  - Longer biography and additional info.
+- style.css
+  - Global typography and color variables.
+  - Layout rules for header, hero, project cards, and footer.
+  - Media queries that adjust navigation and stack content on small screens.
+- assets/images
+  - Local images referenced by the HTML for thumbnails and icons.
 
 How to run locally
-- Since the site is static, you can open index.html directly in a browser.
-- For a local server (recommended for proper relative paths and testing):
-  - Python 3:
-    - macOS / Linux: python3 -m http.server 8000
-    - Windows (PowerShell): python -m http.server 8000
-    - Then open http://localhost:8000 in your browser.
-  - Or use any static server (VS Code Live Server, http-server via npm, etc.)
+- Open index.html directly in a browser (quick preview).
+- Or run a simple static server to avoid relative path issues:
+  - Python 3: python -m http.server 8000
+  - Then open http://localhost:8000
 
 How to deploy
-- GitHub Pages:
-  - Push this repository to GitHub and enable Pages in repository settings (deploy from main branch / root).
-  - The site will be served at https://<username>.github.io/<repo> or your custom domain if configured.
-- Any static host (Netlify, Vercel, Surge) also works — simply point the host to this repo or build output.
+- GitHub Pages: enable Pages in repository settings (serve from main branch / root).
+- Or any static host (Netlify, Vercel) by pointing the host to this repository.
 
-Customization notes (what to edit)
-- Update content:
-  - Edit index.html and about.html to change text, project entries, and contact info.
-- Update styles:
-  - Edit style.css to change colors, fonts, spacing, or responsive breakpoints.
-- Replace images:
-  - Overwrite files in the repo (e.g., im.jpeg) and update the image src in HTML if you change filenames.
-- Add analytics/SEO:
-  - Insert meta tags, OpenGraph tags, and analytics snippets into the <head> of each page as needed.
+Quick editing guide
+- Change content: edit index.html and about.html.
+- Update styles: edit style.css (colors, fonts, spacing).
+- Replace images: overwrite files in the repo and update src attributes if filenames change.
 
 Accessibility & best practices included
-- Uses semantic HTML elements (header, nav, main, footer) for structure and screen-reader friendliness.
-- Text and background colors aim for sufficient contrast (adjust in style.css if needed).
-- Images include alt attributes in the HTML (review and update alt text for accuracy).
+- Semantic tags (header, nav, main, footer).
+- Alt attributes for images (please review and update alt text to match your content).
+- Responsive design for mobile-first viewing.
 
-Notes, suggestions & next steps
-- Consider adding:
-  - A small README (this file) is included to explain the project and usage.
-  - A LICENSE file if you want to define reuse terms.
-  - A simple CI/check (linting or HTML validator) if you plan to expand the site.
-  - A GitHub Pages deployment (I can enable or prepare a README badge showing the live URL).
-- If you'd like, I can:
-  - Commit this README to the repository,
-  - Add a minimal .gitignore, or
-  - Add a deploy workflow (GitHub Actions) to publish to GitHub Pages automatically.
+Next steps I can help with
+- Commit this README.md to the repository.
+- Add a minimal .gitignore and a requirements/deploy note.
+- Create a GitHub Pages workflow (GitHub Actions) to publish automatically.
 
-Contact
-- If you want me to push this README and/or make the deployment changes, tell me and I will prepare the commit.
-```
+If you want, I’ll commit this README to the repo now — tell me to proceed and I’ll prepare the commit.
